@@ -1,7 +1,7 @@
 # todo-project
 html, css website
 
-![home](./aseets/Home page.png)
+![home](Home page.png)
 
 
-![about](./aseets/about page.png)
+![about](about page.png)
