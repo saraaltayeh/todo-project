@@ -1,0 +1,82 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    background-color: #50a8db;
+}
+h1{
+    margin-right: 30px;
+}
+.navbar {
+    overflow: hidden;
+    display: flex;
+  }
+  .navbar a {
+    color: aliceblue;
+        padding: 20px 20px;
+        margin: 20px 80px;
+        text-decoration: none;
+        font-size: 22px;
+  }
+  .navbar a.active {
+    background-color: #eeea11;
+    color: white;
+  }
+  .navbar a:hover {
+    background-color: rgb(194, 219, 243);
+    color: black;
+  }
+  .about-txt {
+      margin: 0 10%;
+  }
+  .overview {
+    border: 3px solid #50a8db ;
+    font-size: larger;
+    padding: 20px 20px;
+  }
+  h1 span {
+      color: red;
+  }
+  .my-info {
+      display: flex;
+    text-align: center;
+    margin: 50px 30px;
+  }
+ .my-pic {
+    border-radius: 50%;
+  }
+footer {
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  background-color: #50a8db;
+bottom:0;
+width:100%;
+}
+.form {
+    text-align: center;
+margin:70px 0;
+}
+h2 {
+color: rgb(163, 6, 6);
+margin: 50px 0;
+}
+input {
+    border: 1px solid  #50a8db;
+    padding: 10px 30px;
+    text-align: center;
+    margin: 10px 0;
+    width: 25%;
+}
+textarea {
+    border: 1px solid  #50a8db;
+}
+.send-btn {
+    width: 8%;
+    background-color: rgb(217, 168, 250);
+}
+label {
+    margin: 0 50px;
+}
