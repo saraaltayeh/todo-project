@@ -10,101 +10,29 @@
       type="image/x-icon"
       href="https://to-do-cdn.microsoft.com/static-assets/c87265a87f887380a04cf21925a56539b29364b51ae53e089c3ee2b2180148c6/icons/logo.png"
     />
-    <style>
-      table,
-      th,
-      td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        max-width: 60%;
-        margin-right: auto;
-        margin-left: auto;
-      }
-      th,
-      td {
-        padding: 5px;
-        text-align: left;
-      }
-      .navbar {
-        overflow: hidden;
-        background-color: #50a8db;
-      }
-      .navbar a {
-        color: aliceblue;
-        float: left;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 20px;
-      }
-      .navbar a.active {
-        background-color: #eeea11;
-        color: white;
-      }
-      .navbar a:hover {
-        background-color: rgb(194, 219, 243);
-        color: black;
-      }
-      .form-control {
-        display: block;
-        width: 50%;
-        padding: 0.875rem 1.375rem;
-        font-size: 1rem;
-        color: #000000;
-        border: 1px solid #ced4da;
-      }
-      .add {
-        background-color: #50a8db;
-        border: 1px solid #ced4da;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        font-size: 16px;
-      }
-      .header {
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      }
-      .footer {
-        position: fixed;
-        bottom: 0;
-        font-size: large;
-      }
-      .footer2 {
-        position: fixed;
-        bottom: 0;
-        right: 10%;
-        font-size: large;
-      }
-    </style>
+    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
-    <div>
+    <header class="header">
       <h1>
-        <p>
           <img
             src="https://to-do-cdn.microsoft.com/static-assets/c87265a87f887380a04cf21925a56539b29364b51ae53e089c3ee2b2180148c6/icons/logo.png"
             alt="logo"
             width="90"
             height="80"
-            style="float: left"
           />
           <br />
           ToDo
-        </p>
       </h1>
-    </div>
-    <div class="navbar">
+    <nav class="navbar">
       <a class="active" href="./index.html">Home</a>
       <a href="./about.html">About</a>
-      <a href="#contact">Contact Us</a>
-    </div>
-    <div>
-      <table style="width: 100%">
-        <h2 style="text-align: center">To Do List</h2>
-        <div class="header">
+    </nav>
+    <i class="fa-solid fa-magnifying-glass"></i>
+    </header>
+    <div class="main">
+        <h2>To Do List</h2>
+        <div class="title">
           <input
             type="text"
             class="form-control todo-list-input"
@@ -112,70 +40,72 @@
           />
           <button class="add">Add</button>
         </div>
-
+        <table>
         <tr>
           <th>Tasks</th>
           <th>Status</th>
         </tr>
         <tr>
           <td>
+            <label for="task1"> Read 30 min</label>
             <input
               type="checkbox"
               id="task1"
               name="task1"
               value="Read 30 min"
             />
-            <label for="task1"> Read 30 min</label>
+            
           </td>
-          <td>Done</td>
+          <td class="done"><span>Done</span></td>
         </tr>
         <tr>
           <td>
+            <label for="task2">go to the gym</label>
             <input
               type="checkbox"
               id="task2"
               name="task2"
               value="go to the gym"
             />
-            <label for="task2">go to the gym</label>
           </td>
-          <td>--</td>
+          <td><span>--</span></td>
         </tr>
         <tr>
           <td>
+            <label for="task3">resolve my task</label>
             <input
               type="checkbox"
               id="task3"
               name="task3"
               value="resolve my task"
             />
-            <label for="task3">resolve my task</label>
           </td>
-          <td>in progress</td>
+          <td><span>in progress</span></td>
         </tr>
         <tr>
           <td>
+            <label for="task4">go to shopping</label>
             <input
               type="checkbox"
               id="task4"
               name="task4"
               value="go to shopping"
             />
-            <label for="task4">go to shopping</label>
           </td>
-          <td>on hold</td>
+          <td><span>on hold</span></td>
         </tr>
       </table>
     </div>
-    <div class="footer">
+    <footer>
+    <div>
       <h3>Contact Us:</h3>
       <p>
         saraaltayeh1@gmail.com <br />
         078000000
       </p>
-      <p>&copy; 2022 ToDo.com</p>
     </div>
-    <div class="footer2">
+    <p>&copy; 2022 ToDo.com</p>
+    <div>
       <h3>Location:</h3>
       <p>
         Amman, Jordan <br />
@@ -183,6 +113,7 @@
         Bl. 33
       </p>
     </div>
+    </footer>
     <script src="./app.js"></script>
   </body>
 </html>
